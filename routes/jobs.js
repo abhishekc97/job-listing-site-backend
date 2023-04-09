@@ -94,7 +94,7 @@ route.put("/edit/:id", async function (req, res, next) {
             );
 
         let skillArray = [];
-        if (skillset !== "") {
+        if (skillset.length != 0) {
             console.log(skillset);
             skillArray = skillset.split(",");
             console.log(skillArray);
